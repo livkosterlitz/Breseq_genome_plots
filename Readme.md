@@ -1,4 +1,4 @@
-These programs can be used to generate a genome-wide plot for multiple samples [example plot](https://github.com/livkosterlitz/LDMsimulations/blob/main/BasicRun/SimData/T1/T1.sh). Step 1: running the `breseq_HTML_to_CSV.py` program to convert the _breseq_ output into CSV files. Step 2: running the `breseq_plotting.R` program to create the genome-wide plot. 
+These programs can be used to generate a genome-wide plot for multiple samples [example plot](https://github.com/livkosterlitz/Breseq_genome_plots/blob/main/BasicRun/Breseq_plots/out.pdf). Step 1: running the `breseq_HTML_to_CSV.py` program to convert the _breseq_ output into CSV files. Step 2: running the `breseq_plotting.R` program to create the genome-wide plot. 
 
 
 ## Step 1 `breseq_HTML_to_CSV.py`
@@ -32,13 +32,13 @@ python /Users/oliviakosterlitz/Programs/breseq_HTML_to_CSV.py -p T -c treatments
 #### Outputs
 The program puts file output in the working directory. 
 
-Ouput CSV files [example CSV output](https://github.com/livkosterlitz/LDMsimulations/blob/main/BasicRun/Treatments/SimSetup_inputCSV_example_with_incubation.csv)
+Ouput CSV files [example CSV output](https://github.com/livkosterlitz/Breseq_genome_plots/blob/main/BasicRun/Breseq_CSV_output/EC_29_1_predicted_mutations.csv)
 > For each sample, the program converts the _breseq_ index.html into CSV files. One for each section: predicted mutations, unassigned missing coverage evidence. and unassigned new junction evidence. 
 
 Additional outputs if plotting option turned on:
-1. combined_predicted_mutations.csv
+1. combined_predicted_mutations.csv [example CSV output](https://github.com/livkosterlitz/Breseq_genome_plots/blob/main/BasicRun/Breseq_CSV_output/combined_predicted_mutations.csv)
 > A CSV file with all of the predicted mutations for each sample. 
-2. plot_variants.csv
+2. plot_variants.csv [example CSV output](https://github.com/livkosterlitz/Breseq_genome_plots/blob/main/BasicRun/Breseq_CSV_output/plot_variants.csv)
 > A CSV file in the correct input format for the `breseq_plotting.R` program. 
 
 ## Step 2 `breseq_plotting.R`
@@ -47,11 +47,11 @@ Additional outputs if plotting option turned on:
 The `breseq_plotting.R` program two required arguments.
 
 * -f/--file: The data file, plot_variants.csv, created by the `breseq_HTML_to_CSV.py` program
-* -o/--plotting_options: The CSV file passing the customizations for the plot. All settings must be set. The example template serves as a good starting point. 
+* -o/--plotting_options: The CSV file passing the customizations for the plot. All settings must be set. The example template serves as a good starting point. [example CSV output](https://github.com/livkosterlitz/Breseq_genome_plots/blob/main/BasicRun/Breseq_plots/plotting_options.csv)
 
 #### Command to run example
 ```bash
 Rscript /Users/oliviakosterlitz/Programs/breseq_plotting.R -f plot_variants.csv -o plotting_options.csv
 ```
 #### Outputs
-A single plot in PDF format. 
+A single plot in PDF format [example plot](https://github.com/livkosterlitz/Breseq_genome_plots/blob/main/BasicRun/Breseq_plots/out.pdf)
