@@ -11,7 +11,7 @@ Required:
 
 Optional:
 * -p/--plotting_csv: If passed the program will create a combined CSV file for all of the samples processed and a CSV file in the correct format for a downstream R program for genome plotting. 
-* -c/--treatment_csv: A CSV with two columns, treatment and strains (i.e., samples), which will set groupings of samples for the downstream R program for genome plotting.  
+* -c/--treatment_csv: A CSV with two columns, treatment and strains (i.e., samples), which will set groupings of samples for the downstream R program for genome plotting [example CSV output](https://github.com/livkosterlitz/Breseq_genome_plots/blob/main/BasicRun/Breseq_CSV_output/treatments.csv)  
 
 #### Command to run example
 ```bash
