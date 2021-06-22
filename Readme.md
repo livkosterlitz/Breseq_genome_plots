@@ -1,4 +1,4 @@
-These programs can be used to generate a genome-wide plot for multiple samples [example plot](https://github.com/livkosterlitz/Breseq_genome_plots/blob/main/BasicRun/Breseq_plots/out.pdf). Step 1: running the `breseq_HTML_to_CSV.py` program to convert the _breseq_ output into CSV files. Step 2: running the `breseq_plotting.R` program to create the genome-wide plot. 
+These programs can be used to generate a genome-wide plot for multiple samples [example plot](https://github.com/livkosterlitz/Breseq_genome_plots/blob/main/BasicRun/Breseq_plots/out.pdf). Step 1: running the `breseq_HTML_to_CSV.py` program to convert the _breseq_ output into CSV files. Step 2: running the `breseq_plotting.R` program to create the genome-wide plot. The example provided in the repository is from [Jordt. et. al. 2020] (https://doi.org/10.1038/s41559-020-1170-1). 
 
 
 ## Step 1 `breseq_HTML_to_CSV.py`
