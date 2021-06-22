@@ -1,0 +1,279 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.31.1&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_22.html">MC</a>&nbsp;<a href="evidence/JC_27.html">JC</a></td><!-- Evidence -->
+<td align="center">U00096</td><!-- Seq_Id -->
+<td align="right">257,908</td><!-- Position -->
+<td align="center">&Delta;776&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>[crl]</i></td>
+<td align="left"><i>[crl]</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_23.html">MC</a>&nbsp;<a href="evidence/JC_31.html">JC</a></td><!-- Evidence -->
+<td align="center">U00096</td><!-- Seq_Id -->
+<td align="right">1,299,499</td><!-- Position -->
+<td align="center">&Delta;1,199&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+254/&#8209;485)</td>
+<td align="center"><i>ychE</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>oppA</i></td>
+<td align="left">UPF0056 family inner membrane protein/oligopeptide ABC transporter periplasmic binding protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_24.html">MC</a>&nbsp;<a href="evidence/JC_32.html">JC</a></td><!-- Evidence -->
+<td align="center">U00096</td><!-- Seq_Id -->
+<td align="right">1,978,503</td><!-- Position -->
+<td align="center">&Delta;776&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>insB1</i>&#8211;<i>insA</i></td>
+<td align="left"><i>insB1, insA</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_4.html">RA</a></td><!-- Evidence -->
+<td align="center">U00096</td><!-- Seq_Id -->
+<td align="right">2,173,363</td><!-- Position -->
+<td align="center">&Delta;2&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;1/+1)</td>
+<td align="center"><i>gatC</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>gatC</i></td>
+<td align="left">pseudogene, galactitol&#8209;specific enzyme IIC component of PTS;transport; Transport of small molecules: Carbohydrates, organic acids, alcohols; PTS system galactitol&#8209;specific enzyme IIC; GO_component: GO:0009274 &#8209; peptidoglycan&#8209;based cell wall; GO_component: GO:0019866 &#8209; organelle inner membrane; GO_process: GO:0016052 &#8209; carbohydrate catabolic process/pseudogene, galactitol&#8209;specific enzyme IIC component of PTS;transport; Transport of small molecules: Carbohydrates, organic acids, alcohols; PTS system galactitol&#8209;specific enzyme IIC; GO_component: GO:0009274 &#8209; peptidoglycan&#8209;based cell wall; GO_component: GO:0019866 &#8209; organelle inner membrane; GO_process: GO:0016052 &#8209; carbohydrate catabolic process</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_5.html">RA</a></td><!-- Evidence -->
+<td align="center">U00096</td><!-- Seq_Id -->
+<td align="right">2,782,745</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;19/+320)</td>
+<td align="center"><i>ypjA</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>pinH</i></td>
+<td align="left">adhesin&#8209;like autotransporter/pseudogene, invertase resolvase family</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_6.html">RA</a></td><!-- Evidence -->
+<td align="center">U00096</td><!-- Seq_Id -->
+<td align="right">3,474,425</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">K43T</font>&nbsp;(A<font class="mutation_in_codon">A</font>A&rarr;A<font class="mutation_in_codon">C</font>A)&nbsp;</td>
+<td align="center"><i>rpsL</i>&nbsp;&larr;</td>
+<td align="left">30S ribosomal subunit protein S12</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_7.html">RA</a></td><!-- Evidence -->
+<td align="center">U00096</td><!-- Seq_Id -->
+<td align="right">3,560,455</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;2/+1)</td>
+<td align="center"><i>glpR</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>glpR</i></td>
+<td align="left">pseudogene, DNA&#8209;binding transcriptional repressor;regulator; Energy metabolism, carbon: Anaerobic respiration; repressor of the glp operon; GO_component: GO:0005737 &#8209; cytoplasm; GO_function: GO:0016564 &#8209; transcription repressor activity; GO_process: GO:0009061 &#8209; anaerobic respiration; GO_process: GO:0006350 &#8209; transcription/pseudogene, DNA&#8209;binding transcriptional repressor;regulator; Energy metabolism, carbon: Anaerobic respiration; repressor of the glp operon; GO_component: GO:0005737 &#8209; cytoplasm; GO_function: GO:0016564 &#8209; transcription repressor activity; GO_process: GO:0009061 &#8209; anaerobic respiration; GO_process: GO:0006350 &#8209; transcription</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_8.html">RA</a></td><!-- Evidence -->
+<td align="center">U00096</td><!-- Seq_Id -->
+<td align="right">4,182,830</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">R529H</font>&nbsp;(C<font class="mutation_in_codon">G</font>T&rarr;C<font class="mutation_in_codon">A</font>T)&nbsp;</td>
+<td align="center"><i>rpoB</i>&nbsp;&rarr;</td>
+<td align="left">RNA polymerase, beta subunit</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_9.html">RA</a></td><!-- Evidence -->
+<td align="center">U00096</td><!-- Seq_Id -->
+<td align="right">4,296,381</td><!-- Position -->
+<td align="center">+GC</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+587/+55)</td>
+<td align="center"><i>gltP</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>yjcO</i></td>
+<td align="left">glutamate/aspartate:proton symporter/Sel1 family TPR&#8209;like repeat protein</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_25.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_25.html">*</a></td>
+<td><a href="evidence/MC_PLOT_25.html">&divide;</a></td>
+<td>U00096</td>
+<td align="right">3423871&#8211;3424234</td>
+<td align="right">3424408&#8211;3424238</td>
+<td align="right">5&#8211;538</td>
+<td align="center">22&nbsp;[20]</td>
+<td align="center">[20]&nbsp;21</td>
+<td align="center"><i>[rrlD]</i></td>
+<td align="left">[rrlD]</td>
+</tr>
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Unassigned new junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_29.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_29.html">?</a></td>
+<td rowspan="1" class="junction_gene">U00096</td>
+<td align="center" class="junction_gene">1207790&nbsp;=</td><td align="center" class="junction_gene">66 (0.830)</td><td rowspan="2" align="center">59 (0.790)</td>
+<td rowspan="2" align="center">44/528</td>
+<td rowspan="2" align="center">0.6</td>
+<td rowspan="2" align="center">50.8%</td>
+<td align="center" class="junction_gene">coding&nbsp;(290/630&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>stfP</i></td>
+<td class="junction_gene">e14 prophage; uncharacterized protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_29.html">?</a></td><td rowspan="1" class="junction_gene">U00096</td>
+<td align="center" class="junction_gene">1209619&nbsp;=</td>
+<td align="center" class="junction_gene">52 (0.690)</td><td align="center" class="junction_gene">pseudogene&nbsp;(1/501&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>stfE</i></td>
+<td class="junction_gene">pseudogene, e14 prophage; side tail fiber protein fragment family;Phage or Prophage Related</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_30.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_30.html">?</a></td>
+<td rowspan="1" class="junction_gene">U00096</td>
+<td align="center" class="junction_gene">=&nbsp;1207805</td><td align="center" class="junction_gene">66 (0.830)</td><td rowspan="2" align="center">48 (0.640)</td>
+<td rowspan="2" align="center">40/528</td>
+<td rowspan="2" align="center">0.8</td>
+<td rowspan="2" align="center">45.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(305/630&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>stfP</i></td>
+<td class="junction_gene">e14 prophage; uncharacterized protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_30.html">?</a></td><td rowspan="1" class="junction_gene">U00096</td>
+<td align="center" class="junction_gene">=&nbsp;1209602</td>
+<td align="center" class="junction_gene">52 (0.690)</td><td align="center" class="junction_gene">pseudogene&nbsp;(18/501&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>stfE</i></td>
+<td class="junction_gene">pseudogene, e14 prophage; side tail fiber protein fragment family;Phage or Prophage Related</td>
+</tr>
+</table>
+</body></html>
