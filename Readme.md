@@ -13,17 +13,6 @@ Optional:
 * -p/--plotting_csv: If passed the program will create a combined CSV file for all of the samples processed and a CSV file in the correct format for a downstream R program for genome plotting. 
 * -c/--treatment_csv: A CSV with two columns, treatment and strains (i.e., samples), which will set groupings of samples for the downstream R program for genome plotting.  
 
-
-#### Basic Terminal command
-```bash
-python breseq_HTML_to_CSV.py -f EC_29_anc EC_29_anc/index.html EC_29_4 EC_29_4/index.html 
-```
-
-#### Terminal command to create input for plotting
-```bash
-python breseq_HTML_to_CSV.py -p T -f EC_29_anc EC_29_anc/index.html EC_29_4 EC_29_4/index.html 
-```
-
 #### Command to run example
 ```bash
 python /Users/oliviakosterlitz/Programs/breseq_HTML_to_CSV.py -p T -c treatments.csv -f EC_29_anc EC_29_anc/index.html EC_29_1 EC_29_1/index.html EC_29_2 EC_29_2/index.html EC_29_3 EC_29_3/index.html EC_29_4 EC_29_4/index.html EC_29_5 EC_29_5/index.html EC_29_6 EC_29_6/index.html
