@@ -36,7 +36,7 @@ Additional outputs if plotting option turned on:
 The `breseq_plotting.R` program two required arguments.
 
 * -f/--file: The data file, plot_variants.csv, created by the `breseq_HTML_to_CSV.py` program
-* -o/--plotting_options: The CSV file passing the customizations for the plot. All settings must be set. The example template serves as a good starting point. [example CSV output](https://github.com/livkosterlitz/Breseq_genome_plots/blob/main/BasicRun/Breseq_plots/plotting_options.csv)
+* -o/--plotting_options: The CSV file passing the customizations for the plot. All settings must be set. The example template serves as a good starting point. [example plotting options input](https://github.com/livkosterlitz/Breseq_genome_plots/blob/main/BasicRun/Breseq_plots/plotting_options.csv)
 
 #### Command to run example
 ```bash
